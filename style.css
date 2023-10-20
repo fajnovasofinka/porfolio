@@ -1,5 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
 body {
     margin: 0;
     padding: 0;
@@ -7,4 +31,43 @@ body {
     background-color: #1b1d24;
     color: white;
     width: 100%;
+}
+
+/* HEADER & NAVBAR */
+.navigator {
+    background-color: rgb(0, 0, 0, .40); 
+}
+.navigator ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    list-style-type: none;
+}
+
+.navigator ul li {
+    margin: 35px 100px 30px 100px;
+}
+
+.navigator a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+        
+    -webkit-transition: color 0.3s ease-out;
+    -moz-transition: color 0.3s ease-out;
+    -o-transition: color 0.3s ease-out;
+    -ms-transition: color 0.3s ease-out;
+    transition: color 0.3s ease-out;
+}
+
+.navigator a:hover {
+    color: #72eb3a;
+}
+
+.navigator img {
+    margin-top: 5px;
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 80px;
 }
