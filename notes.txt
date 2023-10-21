@@ -1,0 +1,2 @@
+- udělat šipku animovanou, aby se vracela ze shora na misto jednou za x sekund
+- responsivitu

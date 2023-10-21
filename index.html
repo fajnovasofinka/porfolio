@@ -4,10 +4,13 @@
         <meta charset="utf-8">
 
         <!-- web info -->
-        <title>{Fainsoff}</title>
+        <title>{fainsoff}</title>
         <link rel="icon" href="images/green.png">
         <meta name="author" content="website: Sofie Tůmová;">
-        <meta name="description" content="Fainsoff by Sofie Tůmová">
+        <meta name="description" content="kreativita na prvním místě">
+        <meta name="type" content="website">
+        <meta name="title" content="fainsoff">
+        <meta name="inspiration" content="Filip Stránský; Socialpark">
 
         <!-- web-browser & search -->
         <meta name="theme-color" content="black"> <!-- chrome & firefox & opera -->
@@ -16,6 +19,7 @@
 
         <!-- linking -->
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="responsive.css">
         <script src="script.js"></script>
 
     </head>
@@ -23,7 +27,7 @@
     <body>
         <header class="header">
 
-            <!-- nav links -->
+            <!-- nav odkazy -->
             <nav class="navigator">
                 <ul>
                     <li><a href="">O mně</a></li>
@@ -34,7 +38,39 @@
                 </ul>
             </nav>
 
+            <!-- hlavní obrázek -->
+            <main class="main">
+                <h1>{fainsoff} |</h1>
+                <p>kreativita na prvním místě</p>
+                <div class="main-image"></div>
+                <a href=""><div class="down-arrow"></div></a>
+            </main>
+
         </header>
+
+        <article class="article" id="o-mne">
+            <div class="o-mne-image"><img src="images/o-mne-photo.jpeg"></div>
+                <aside>
+                    <h2>Nadšená studentka</h2>
+                    <h4>s vášní pro IT a sociální média, ale také s láskou pro sport a kreativitu.</h4>
+                    <p>Už od malička jsem byla "neposedáček". Moji energii jsem od pěti let vyčerpávala hraním tenisu a zkoušení spousty
+                        dalších sportů a aktivit. Dnes se kromě pinkání a běhání po kurtu věnuji také například yoyování, lyžování, skateboardingu nebo 
+                        parkouru.
+                    </p>
+                    <p>Když zrovna nehledám zajímavé výzvy, upínám se pevně na své studium, seberozvoj a pracovní kariéru, které jsou pro
+                        mě v aktuální době naprosté priority. Cítím se jako neustálý student života, který hledá nové způsoby, jak se zdokonalit.
+                    </p>
+                    <p>Svoji lásku k videotvorbě, grafice a sociálním sítím jsem objevila už jako malý špunt prostřednictvím platformy YouTube, 
+                        kdy jsem vesele svému tátovi brala jeho kameru, abych natáčela mé dobrodružství z naší zahrady. Tvorba videí pro mě vždy 
+                        znamenala stavět most mezi kreativními nápady a <a href="https://youtube.com/fajnovasofinka">vizuálním světem</a>.
+                    </p>
+                    <p>
+                        Co je pro mě teď tím nejzajímavějším a nejdůležitějším, je proměnit svoji vášeň v profesi a pomáhat i ostatním s jejich cestou.
+                    </p>
+                    <p class="podpis" style="font-size: 25px;">- Sofie Tůmová</p>
+                </aside>
+        </article>
+
     </body>
 
 </html>
