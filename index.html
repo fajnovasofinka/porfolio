@@ -10,66 +10,70 @@
         <meta name="description" content="kreativita na prvním místě">
         <meta name="type" content="website">
         <meta name="title" content="fainsoff">
-        <meta name="inspiration" content="Filip Stránský; Socialpark">
+        <meta name="inspiration" content="Filip Stránský">
 
         <!-- web-browser & search -->
         <meta name="theme-color" content="black"> <!-- chrome & firefox & opera -->
         <meta name="apple-mobile-web-app-status-bar-style" content="black"> <!-- safari -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
         <!-- linking -->
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="responsive.css">
         <script src="script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     </head>
-
     <body>
-        <header class="header">
+        
+        <!-- HEADER & NAV LINKS -->
 
-            <!-- nav odkazy -->
-            <nav class="navigator">
+        <header id="upthere">
+
+            <div id="bgphoto"></div>
+            <input type="checkbox" id="nav_check" hidden>
+            <nav class="nav-links" id="navlinks">
                 <ul>
-                    <li><a href="">O mně</a></li>
-                    <li><a href="">Služby</a></li>
-                    <a href=""><img src="images/green.png"></a>
-                    <li><a href="">Projekty</a></li>
-                    <li><a href="">Kontakt</a></li>
+                    <li><a class="odkaz" href="#omne" title="O mně">O mně</a></li>
+                    <li><a href="#codelam" title="Co dělám">Co dělám</a></li>
+                    <li><a href="#projekty" title="Projekty">Projekty</a></li>
+                    <li><a href="#kontakt" title="Kontakt">Kontakt</a></li>
                 </ul>
             </nav>
 
-            <!-- hlavní obrázek -->
-            <main class="main">
-                <h1>{fainsoff} |</h1>
-                <p>kreativita na prvním místě</p>
-                <div class="main-image"></div>
-                <a href=""><div class="down-arrow"></div></a>
-            </main>
+            <div class="nav-logo">
+                <a href="" title="Fainsoff">
+                    <img alt="fainsoff by Sofie Tůmová" src="images/green.png" class="fainsofflogo">
+                </a>
+            </div>
 
-        </header>
+            <div class="header-content">
+                <div class="header-title">{fainsoff} | <span class="kreativita">kreativita na prvním místě</span></div>
+            </div>
 
-        <article class="article" id="o-mne">
-            <div class="o-mne-image"><img src="images/o-mne-photo.jpeg"></div>
-                <aside>
-                    <h2>Nadšená studentka</h2>
-                    <h4>s vášní pro IT a sociální média, ale také s láskou pro sport a kreativitu.</h4>
-                    <p>Už od malička jsem byla "neposedáček". Moji energii jsem od pěti let vyčerpávala hraním tenisu a zkoušení spousty
-                        dalších sportů a aktivit. Dnes se kromě pinkání a běhání po kurtu věnuji také například yoyování, lyžování, skateboardingu nebo 
-                        parkouru.
-                    </p>
-                    <p>Když zrovna nehledám zajímavé výzvy, upínám se pevně na své studium, seberozvoj a pracovní kariéru, které jsou pro
-                        mě v aktuální době naprosté priority. Cítím se jako neustálý student života, který hledá nové způsoby, jak se zdokonalit.
-                    </p>
-                    <p>Svoji lásku k videotvorbě, grafice a sociálním sítím jsem objevila už jako malý špunt prostřednictvím platformy YouTube, 
-                        kdy jsem vesele svému tátovi brala jeho kameru, abych natáčela mé dobrodružství z naší zahrady. Tvorba videí pro mě vždy 
-                        znamenala stavět most mezi kreativními nápady a <a href="https://youtube.com/fajnovasofinka">vizuálním světem</a>.
-                    </p>
-                    <p>
-                        Co je pro mě teď tím nejzajímavějším a nejdůležitějším, je proměnit svoji vášeň v profesi a pomáhat i ostatním s jejich cestou.
-                    </p>
-                    <p class="podpis" style="font-size: 25px;">- Sofie Tůmová</p>
-                </aside>
-        </article>
+            <!-- nav links burger -->
+
+            <div onclick="openNav()" id="barBar" class="bar-bar">
+                <div id="bar1"></div>
+                <div id="bar2"></div>
+                <div id="bar3"></div>
+            </div>
+    
+            <div id="closebtn" onclick="closeNav()"></div>
+    
+            <div id="myNav" class="overlay">
+                 <div class="overlay-content">
+                    <a onclick="closeNav()" class="scr-slow" title="O mně" href="#omne">O mně</a>
+                    <a onclick="closeNav()" class="scr-slow" title="Co dělám" href="#codelam">Co dělám</a>
+                    <a onclick="closeNav()" class="scr-slow" title="Projekty" href="#projekty">Projekty</a>
+                    <a onclick="closeNav()" class="scr-slow" title="Kontakt" href="#kontakt">Kontakt</a>
+                  </div>
+            </div>
+
+            
+            <a href="#omne" title="O mně"><div class="down-arrow"></div></a>
+
+        </header>            
 
     </body>
 
