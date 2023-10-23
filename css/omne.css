@@ -1,0 +1,130 @@
+article.article-omne {
+    width: 100%;
+    max-width: 1120px;
+    margin: auto;
+    position: relative;
+    top: 190px;
+    margin-bottom: 350px;
+}
+
+article.article-omne aside {
+    width: 560px;
+    height: 750px;
+    margin: 0;
+    position: absolute;
+    display: inline-block;
+    right: 0;
+    background-color: #acec8f;
+    color: black;
+}
+
+article.article-omne aside h2 {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 50px;
+    margin-top: 65px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+article.article-omne aside h4 {
+    color: #1b1d24;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 50px;
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+article.article-omne aside p {
+    padding: 0 50px;
+    margin: 30px 0;
+    font-size: 16px;
+    color: black;
+}
+
+article.article-omne aside a {
+    text-decoration: underline;
+    color: #000;
+}
+
+article.article-omne .image {
+    width: 560px;
+    height: 750px;
+    margin: 0;
+    background-size: cover;
+    display: inline-block;
+}
+
+.podpis {
+    font-family: 'Dancing Script', cursive;
+  }
+
+/* RESPONSIVE */
+
+/* IPAD VERSION */
+
+@media only screen and (max-width: 1000px) and (min-width: 501px) {
+
+    article.article-omne {
+        max-width: 700px;
+    }
+
+    article.article-omne aside {
+        width: auto;
+        height: 100%;
+        margin: -10px 0 0;
+        position: relative;
+        right: 0;
+        background-color: #acec8f;
+        padding: 0 0 40px;
+    }
+
+    article.article-omne .image {
+        height: 900px;
+        background-position: 0 -70px;
+        width: 100%;
+    }
+
+}
+
+/* MOBILE VERSION */
+@media screen and (max-width: 500px) {
+
+    article.article-omne aside h2 {
+        overflow: visible;
+        padding: 0 15px;
+    }
+
+    article.article-omne aside h4 {
+        overflow: visible;
+        padding: 0 15px;
+    }
+    
+    article.article-omne aside p {
+        padding: 0 15px;
+    }
+    
+    article.article-omne aside {
+        width: auto;
+        height: 100%;
+        margin: -10px 0 0;
+        position: relative;
+        right: 0;
+        background-color: #acec8f;
+        padding: 0 0 40px;
+    }
+    
+    article.article-omne .image {
+        height: 500px;
+        background-position: 0 -70px;
+    }
+}
+
+/* GALAXY FOLD */
+@media screen and (max-width: 300px) {
+
+    article.article-omne .image {
+        height: 400px;
+        background-position: 0 -70px;
+    }
+}

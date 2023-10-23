@@ -3,11 +3,13 @@
 
 @import url(css/responsive.css);
 @import url(css/header.css);
+@import url(css/omne.css);
 
 html {
   box-sizing: border-box;
   font-size: 16px;
   overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 *, *:before, *:after {
@@ -45,5 +47,12 @@ header {
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   overflow: hidden;
+}
+
+section {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: auto;
 }
 
