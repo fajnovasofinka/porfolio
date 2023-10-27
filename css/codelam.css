@@ -1,0 +1,66 @@
+.codelam {
+    background-color: #e8ffde;
+    color: black;
+    margin-bottom: 100px;
+    margin-top: 150px;
+}
+
+.flips {
+    position: relative;
+  }
+  .flips span {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    color: black;
+    text-transform: uppercase;
+    animation: flip 3s infinite;
+    animation-delay: calc(.2s * var(--i))
+  }
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+  }
+
+.codelam-nadpis {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-bottom: 15px;
+    position: relative;
+    background-color: #e8ffde;
+    padding-top: 80px;
+}
+
+.codelam-cara {
+    width: 50%;
+    height: 3px;
+    background-color: black;
+    align-items: center;
+}
+
+.codelam-panely {
+    display: block;
+}
+
+.codelam-website {
+    display: inline-block;
+}
+
+.codelam-video {
+    display: inline-block;
+}
+
+.codelam-socialni {
+  display: inline-block;
+}
+
+.codelam-brading {
+    display: inline-block;
+}
