@@ -49,7 +49,7 @@ nav ul li a:hover {
     display: inline-block;
 }
 
-.nav-logo:hover {
+.fainsofflogo:hover {
     -webkit-filter: brightness(100);
     filter: brightness(100);
 }
@@ -75,6 +75,48 @@ nav ul li a:hover {
     font-weight: bold;
 }
 
+/* RELOAD ANIMATIONS */
+
+.header-title {
+    animation: title-load 500ms ease-in;
+}
+
+.fainsofflogo {
+    animation: title-load 300ms ease-in;
+}
+
+.nav-omne {
+    animation: title-load 500ms ease-in;
+}
+
+.nav-codelam {
+    animation: title-load 700ms ease-in;
+}
+
+.nav-projekty {
+    animation: title-load 900ms ease-in;
+}
+
+.nav-kontakt {
+    animation: title-load 1100ms ease-in;
+}
+
+.down-arrow {
+    animation: title-load 500ms ease-in;
+}
+
+@keyframes title-load {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
 .kreativita {
     color: white;
     font-size: 24px;
@@ -88,6 +130,17 @@ nav ul li a:hover {
     bottom: 30px;
     left: 50%;
     margin-left: -15px;
+}
+
+.down-arrow:hover {
+    -webkit-filter: invert(25%) sepia(50%) saturate(800%) hue-rotate(44deg) brightness(100%) contrast(96%);
+    filter: invert(25%) sepia(50%) saturate(800%) hue-rotate(44deg) brightness(100%) contrast(96%);
+
+    -webkit-transition: filter 0.3s ease-out;
+    -moz-transition: filter 0.3s ease-out;
+    -o-transition: filter 0.3s ease-out;
+    -ms-transition: filter 0.3s ease-out;
+    transition: filter 0.3s ease-out;
 }
 
 #bgphoto {
@@ -106,8 +159,6 @@ nav ul li a:hover {
     background-position: center;
     transition: background-position 0.5s ease;
 }
-
-
 
 /* RESPONSIVE NAVBAR */
 

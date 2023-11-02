@@ -20,8 +20,9 @@
 
         <!-- linking -->
         <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
+        <script defer src="script.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/14670a0349.js" crossorigin="anonymous"></script>
 
     </head>
     <body>
@@ -30,14 +31,14 @@
 
         <header id="upthere">
 
-            <div id="bgphoto"></div>
+            <div id="bgphoto" class="bgphoto"></div>
             <input type="checkbox" id="nav_check" hidden>
             <nav class="nav-links" id="navlinks">
                 <ul>
-                    <li><a class="odkaz" href="#omne" title="O mně">O mně</a></li>
-                    <li><a href="#codelam" title="Co dělám">Co dělám</a></li>
-                    <li><a href="#projekty" title="Projekty">Projekty</a></li>
-                    <li><a href="#kontakt" title="Kontakt">Kontakt</a></li>
+                    <li><a href="#omne" title="O mně" class="nav-omne">O mně</a></li>
+                    <li><a href="#codelam" title="Co dělám" class="nav-codelam">Co dělám</a></li>
+                    <li><a href="#projekty" title="Projekty" class="nav-projekty">Projekty</a></li>
+                    <li><a href="#kontakt" title="Kontakt" class="nav-kontakt">Kontakt</a></li>
                 </ul>
             </nav>
 
@@ -97,47 +98,54 @@
                     <p class="podpis" style="font-size: 25px;">- Sofie Tůmová</p>
                 </aside>
             </article>
+
         </section>
 
         <section class="codelam">
 
-            <div class="flips codelam-nadpis" id="codelam">
-                <span style="--i:1">C</span>
-                <span style="--i:2">O</span>
-                <span style="--i:3"> </span>
-                <span style="--i:4">D</span>
-                <span style="--i:5">Ě</span>
-                <span style="--i:6">L</span>
-                <span style="--i:7">Á</span>
-                <span style="--i:8">M</span>
-               </div>
-               
-            <hr class="codelam-cara">
-            <div class="codelam-panely">
-                <div class="codelam-website">
-                    <h2>Webovky na míru</h2>
-                    <hr>
-                    <p></p>
+                <div class="flips codelam-nadpis" id="codelam">
+                    <span style="--i:1">C</span>
+                    <span style="--i:2">O</span>
+                    <span style="--i:3"> </span>
+                    <span style="--i:4">D</span>
+                    <span style="--i:5">Ě</span>
+                    <span style="--i:6">L</span>
+                    <span style="--i:7">Á</span>
+                    <span style="--i:8">M</span>
+               </div>  
+                <hr class="codelam-cara-hlavni">
+
+            <div class="codelam-row">
+                <div class="codelam-sluzby" class="hidden">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Webové stránky na míru</h2>
+                    <p>Od návrhu až po úplnou realizaci projektu. Pomohu Vám vytvořit moderní webové stránky, kterým dodám pěkný vzhled a 
+                        naučím je všem potřebným funkcím. 
+                    </p>
                 </div>
-                <div class="codelam-video">
-                    <h2>Editace video obsahu</h2>
-                    <hr>
-                    <p></p>
+                <div class="codelam-sluzby" class="hidden">
+                    <i class="fa-solid fa-clapperboard"></i>
+                    <h2>Video tvorba</h2>
+                    <p>
+                    </p>
                 </div>
-            </div>
-            <div class="codelam-panely">
-                <div class="codelam-socialni">
+                <div class="codelam-sluzby" class="hidden">
+                    <i class="fa-solid fa-chart-line"></i>
                     <h2>Správa sociálních sítí</h2>
-                    <hr>
-                    <p></p>
+                    <p> 
+                    </p>
                 </div>
-                <div class="codelam-branding">
+                <div class="codelam-sluzby" class="hidden">
+                    <i class="fa-solid fa-palette"></i>
                     <h2>Grafika & Brandbuilding</h2>
-                    <hr>
-                    <p></p>
+                    <p> 
+                    </p>
                 </div>
             </div>
+
         </section>
+
+        
 
     </body>
 

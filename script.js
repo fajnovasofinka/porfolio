@@ -19,3 +19,5 @@ function openNav() {
     document.getElementById("barBar").style.position = "absolute";
     document.getElementById("closebtn").style.display = "none";
   }
+
+// slowly appearing

@@ -1,8 +1,9 @@
 .codelam {
-    background-color: #e8ffde;
-    color: black;
-    margin-bottom: 100px;
-    margin-top: 150px;
+  background-color: white;
+  width: 100%;
+  height: auto;
+  padding: 0 15%;
+  padding-bottom: 100px;
 }
 
 .flips {
@@ -32,35 +33,68 @@
     text-transform: uppercase;
     letter-spacing: 0px;
     text-align: center;
-    margin-bottom: 15px;
     position: relative;
-    background-color: #e8ffde;
     padding-top: 80px;
 }
 
-.codelam-cara {
+.codelam-cara-hlavni {
     width: 50%;
     height: 3px;
     background-color: black;
+    color: black;
     align-items: center;
+    margin-bottom: 100px;
 }
 
-.codelam-panely {
-    display: block;
+.codelam-row {
+  color: black;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 2fr));
+  grid-gap: 30px;
 }
 
-.codelam-website {
-    display: inline-block;
+.codelam-sluzby {
+  text-align: center;
+  padding: 25px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  background: transparent;
+  transition: transform 0.5s, background 0.5s;
 }
 
-.codelam-video {
-    display: inline-block;
+.codelam-sluzby h2 {
+  font-weight: 900;
+  margin-bottom: 5px;
 }
 
-.codelam-socialni {
-  display: inline-block;
+.codelam-sluzby i {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #72eb3a;
 }
 
-.codelam-brading {
-    display: inline-block;
+.codelam-sluzby:hover {
+  background-color: #72eb3a;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.codelam-sluzby:hover i {
+  color: #fff;
+}
+
+/* MENŠÍ OBRAZOVKY */
+@media screen and (max-width: 1000px) {
+
+  .codelam-row {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+/* GALAXY FOLD */
+@media screen and (max-width: 300px) {
+
+  .codelam-row {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
 }
