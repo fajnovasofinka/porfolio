@@ -3,7 +3,7 @@
   width: 100%;
   height: auto;
   padding: 0 15%;
-  padding-bottom: 100px;
+  padding-bottom: 120px;
 }
 
 .flips {
@@ -34,14 +34,13 @@
     letter-spacing: 0px;
     text-align: center;
     position: relative;
-    padding-top: 80px;
+    padding-top: 100px;
 }
 
 .codelam-cara-hlavni {
     width: 50%;
     height: 3px;
     background-color: black;
-    color: black;
     align-items: center;
     margin-bottom: 100px;
 }
@@ -58,8 +57,6 @@
   padding: 25px 10px;
   border-radius: 5px;
   font-size: 16px;
-  background: transparent;
-  transition: transform 0.5s, background 0.5s;
 }
 
 .codelam-sluzby h2 {
@@ -74,13 +71,7 @@
 }
 
 .codelam-sluzby:hover {
-  background-color: #72eb3a;
-  color: #fff;
-  transform: scale(1.05);
-}
-
-.codelam-sluzby:hover i {
-  color: #fff;
+  background-color: rgb(114, 235, 58, 0.10);
 }
 
 /* MENŠÍ OBRAZOVKY */
@@ -88,6 +79,17 @@
 
   .codelam-row {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .flips span {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .flips span {
+    font-size: 35px;
   }
 }
 

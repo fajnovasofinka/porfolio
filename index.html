@@ -20,6 +20,7 @@
 
         <!-- linking -->
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <script defer src="script.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://kit.fontawesome.com/14670a0349.js" crossorigin="anonymous"></script>
@@ -102,7 +103,6 @@
         </section>
 
         <section class="codelam">
-
                 <div class="flips codelam-nadpis" id="codelam">
                     <span style="--i:1">C</span>
                     <span style="--i:2">O</span>
@@ -116,37 +116,55 @@
                 <hr class="codelam-cara-hlavni">
 
             <div class="codelam-row">
-                <div class="codelam-sluzby" class="hidden">
+                <div class="codelam-sluzby" data-aos="fade-right" data-aos-duration="1000">
                     <i class="fa-solid fa-laptop-code"></i>
                     <h2>Webové stránky na míru</h2>
-                    <p>Od návrhu až po úplnou realizaci projektu. Pomohu Vám vytvořit moderní webové stránky, kterým dodám pěkný vzhled a 
-                        naučím je všem potřebným funkcím. 
+                    <p>Vaše webové stránky jsou Vašim digitálním vstupem do světa, a já Vám ráda vytvořím stránky na míru s 
+                        moderními funkcemi a vizuálně poutavým designem. Společně můžeme zajistit, že vaše online přítomnost bude 
+                        nejenom profesionální, ale také neodolatelná. Vaše webové stránky mohou být vaší digitální vizitkou.
                     </p>
                 </div>
-                <div class="codelam-sluzby" class="hidden">
+                <div class="codelam-sluzby" data-aos="fade-right" data-aos-duration="1500">
                     <i class="fa-solid fa-clapperboard"></i>
                     <h2>Video tvorba</h2>
-                    <p>
+                    <p>Ráda Vám pomohu s tvorbou, natáčením a střihem videa pro vaše sociální sítě, maturitní video nebo jakoukoliv
+                        jinou potřebu. S mými dovednostmi a zkušenostmi se postarám o vytvoření originálního obsahu. 
+                        Stačí mi říct, co potřebujete, a já se postarám o zbytek.
                     </p>
                 </div>
-                <div class="codelam-sluzby" class="hidden">
+                <div class="codelam-sluzby" data-aos="fade-right" data-aos-duration="1000">
                     <i class="fa-solid fa-chart-line"></i>
                     <h2>Správa sociálních sítí</h2>
-                    <p> 
+                    <p>Jsem zde, abych se postarala o vaše sociální sítě. S péčí o pravidelný obsah se postarám, aby Vaše značka zářila
+                        online a oslovila Vaši cílovou skupinu. Vaše sociální sítě budou v dobrých rukou.
                     </p>
                 </div>
-                <div class="codelam-sluzby" class="hidden">
+                <div class="codelam-sluzby" data-aos="fade-right" data-aos-duration="1500">
                     <i class="fa-solid fa-palette"></i>
                     <h2>Grafika & Brandbuilding</h2>
-                    <p> 
+                    <p>Vaše značka si zaslouží jedinečný vizuální koncept (logo, design, grafika, ...) - společně vytvoříme nezapomenutelný
+                        a oslnivý image pro Vaši značku.
                     </p>
                 </div>
             </div>
-
         </section>
 
-        
+        <section class="projekty">
+            <div class="projekty-nadpis" id="projekty">
+            <h1>
+                <a href="" class="typewrite" data-period="2000" data-type='[ "Projekty", "Moje práce"]'>
+                  <span class="wrap"></span>
+                </a>
+              </h1>
+              <hr class="projekty-cara-hlavni">
+            </div>
+        </section>
 
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>    
     </body>
 
 </html>
