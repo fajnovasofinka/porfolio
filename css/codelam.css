@@ -93,10 +93,22 @@
   }
 }
 
+/* TELEFON NADPIS */
+@media screen and (max-width: 500px) {
+
+  .flips span {
+    font-size: 30px;
+  }
+}
+
 /* GALAXY FOLD */
 @media screen and (max-width: 300px) {
 
   .codelam-row {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .flips span {
+    font-size: 25px;
   }
 }
