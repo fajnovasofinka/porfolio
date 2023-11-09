@@ -3,7 +3,7 @@
   width: 100%;
   height: auto;
   padding: 0 15%;
-  padding-bottom: 120px;
+  padding-bottom: 180px;
 }
 
 .flips {
@@ -34,7 +34,7 @@
     letter-spacing: 0px;
     text-align: center;
     position: relative;
-    padding-top: 100px;
+    padding-top: 120px;
 }
 
 .codelam-cara-hlavni {
@@ -42,7 +42,7 @@
     height: 3px;
     background-color: black;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 120px;
 }
 
 .codelam-row {

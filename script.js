@@ -20,6 +20,32 @@ function openNav() {
     document.getElementById("closebtn").style.display = "none";
   }
 
+// navbar scrollup
+
+$(document).ready(function() {
+  var previousScroll = 0,
+      headerOrgOffset = $('#header').offset().top;
+
+  $('#header-wrap').height($('#header').height());
+
+  $(window).scroll(function() {
+      var currentScroll = $(this).scrollTop();
+      console.log(currentScroll + " and " + previousScroll + " and " + headerOrgOffset);
+      if(currentScroll > headerOrgOffset) {
+          if (currentScroll > previousScroll) {
+              $('#header').slideUp();
+          } else {
+              $('#header').slideDown();
+              $('#header').addClass('fixed');
+          }
+      } else {
+           $('#header').removeClass('fixed');
+      }
+      previousScroll = currentScroll;
+  });
+
+});
+
 // projekty - typewrite
 
 var TxtType = function(el, toRotate, period) {
