@@ -195,7 +195,7 @@ nav ul li a:hover {
 }
 
 .overlay a:hover, .overlay a:focus {
-	color: rgb(244,20,36);
+	color: #72eb3a;
 }
 
 #header img {
@@ -331,8 +331,8 @@ backdrop-filter: blur(2px);
 
     .nav-logo {
         width: 40px;
-        margin-top: 25px;
-        margin-left: 25px;
+        margin-top: 15px;
+        margin-left: 15px;
     }
 
     .header-title{
@@ -351,11 +351,11 @@ backdrop-filter: blur(2px);
     }
     .bar-bar {
         right: 10px;
-        top: 25px;
+        top: 35px;
     }
     #closebtn {
         right: 10px;
-        top: 25px;
+        top: 35px;
     }
     #header img {
         height: 25px;
@@ -383,6 +383,6 @@ backdrop-filter: blur(2px);
     }
 
     .nav-logo {
-        margin-left: 30px;
+        margin-left: 15px;
     }
 }

@@ -1,0 +1,108 @@
+.fo-colums {
+    display: block;
+    position: relative;
+    text-align: justify;
+    width: 100;
+    height: auto;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.fo-fainsoff {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    margin: 0;
+    text-align: left;
+    margin: 25px 25px 0px 25px;
+}
+
+.fo-fainsoff h2 {
+    color: #72eb3a;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.fo-fainsoff p {
+    font-size: 15px;
+    color: white;
+}
+
+.fo-udaje {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    text-align: left;
+    margin: 25px 0px 0px 45px;
+}
+
+.fo-udaje h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.fo-udaje h4 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.fo-udaje p {
+    font-size: 12px;
+    font-style: italic;
+}
+
+.fo-kontakt {
+    float: right;
+    position: relative;
+    vertical-align: top;
+    text-align: right;
+    margin: 25px 55px 0px 0px;
+}
+
+.fo-kontakt h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.fo-kontakt h4 {
+    font-style: italic;
+}
+
+.fo-kontakt p {
+    font-style: italic;
+}
+
+.fo-kontakt a {
+    color: white;
+}
+
+.fo-ikonky i {
+    font-size: 30px;
+    margin: 10px 10px 0px 10px;
+    transition: ease-in 0.2s;
+}
+
+.fo-ikonky i:hover {
+    color: #72eb3a;
+}
+
+.fo-copyright {
+    margin: 100px 0 20px 0;
+    display: block;
+    font-size: 12px;
+    text-align: center;
+}
+
+.fo-copyright p {
+    padding: 7px 0px;
+}
+
+.fo-cara {
+    height: 1px;
+    background-color: gray;
+    width: 100%;
+    border: none;
+}
