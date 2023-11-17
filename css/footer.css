@@ -97,12 +97,40 @@
 }
 
 .fo-copyright p {
-    padding: 7px 0px;
+    padding: 10px 0px;
 }
 
 .fo-cara {
     height: 1px;
     background-color: gray;
-    width: 100%;
+    width: 40%;
     border: none;
+    margin-bottom: 20px;
 }
+
+/* menší obrazovky */
+@media screen and (max-width: 800px) {
+
+    .fo-fainsoff {
+        text-align: center;
+        display: block;
+    }
+
+    .fo-udaje {
+        display: block;
+        text-align: center;
+        margin: 40px 0px 0px 0px;
+    }
+
+    .fo-kontakt {
+        display: block;
+        text-align: center;
+        margin: 40px 0px 0px 0px;
+        float: none;
+    }
+
+    .fo-ikonky {
+        margin: 20px 0px 0px 0px;
+    }
+
+  }
