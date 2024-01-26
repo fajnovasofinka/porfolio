@@ -226,11 +226,13 @@
             <hr class="kontakt-cara-hlavni" data-aos="fade-left" data-aos-duration="1200">
 
             <div class="kontakt-form" data-aos="fade-in" data-aos-duration="1000">
-                <form onsubmit="sendEmail(); reset(); return false;">
+                <form action="https://api.web3forms.com/submit" method="POST">
                     <h3>Napište mi!</h3>
-                    <input type="text" id="name" placeholder="Celé jméno" required>
-                    <input type="email" id="email" placeholder="Email" required>
-                    <textarea id="message" rows="4" placeholder="Zpráva"></textarea>
+                    <input type="hidden" name="access_key" value="7ee5803b-8fe7-4cd4-a2f1-cb751105e10e">
+
+                    <input type="text" id="name" name="name" placeholder="Celé jméno" required>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <textarea id="message" name="message" rows="4" placeholder="Zpráva"></textarea>
                     <button type="sumbit">Poslat</button>
                 </form>
             </div>
@@ -280,7 +282,7 @@
         <script>
           AOS.init();
         </script>
-        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="https://web3forms.com/client/script.js" async defer></script>
     </body>
 
 </html>
