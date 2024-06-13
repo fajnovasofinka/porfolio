@@ -26,6 +26,7 @@
 
 .projekty-content {
     margin-bottom: 100px;
+    margin-right: 50px;
 }
 
 .projekty-row {
@@ -120,5 +121,9 @@
 
     .projekty-row-desc {
         font-size: 15px;
+    }
+    .projekty-content {
+        margin-bottom: 100px;
+        margin-right: 0;
     }
 }
